@@ -1,0 +1,47 @@
+# Audio bruto extraído de Portal 2 (copyright) - NO subir
+dataset-tools/glados_raw_es/
+dataset-tools/glados_raw/
+dataset-tools/captions/
+audio-out/
+models-final/*.onnx
+models-final/*.wav
+
+# Repo clonado piper1-gpl (venv, cache, checkpoints, logs)
+piper-train/venv/
+piper-train/cache/
+piper-train/checkpoints/
+piper-train/lightning_logs/
+piper-train/.git/
+# NO agregar el repo clonado piper1-gpl como submodule/embebido
+piper-train/*
+audio/
+models/
+
+# Carpetas de modelos TTS genéricos / experimentales (no parte del proyecto final)
+piper/
+
+# RVC (11G) - pipeline descartado, no subir
+rvc/
+
+# Modelos grandes
+*.pth
+*.ckpt
+*.safetensors
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

@@ -21,9 +21,10 @@ Todo corre 100% local, sin servicios en la nube, en una RTX 4060 (8GB VRAM).
 5. [Problemas encontrados y soluciones](#problemas-encontrados-y-soluciones)
 6. [El agente: herramientas y reconocimiento de voz](#el-agente)
 7. [Estructura de carpetas](#estructura-de-carpetas)
-8. [Cómo correrlo](#como-correrlo)
-9. [Nota legal / assets con copyright](#nota-legal)
-10. [Créditos](#creditos)
+8. [Cómo corrrerlo](#como-correrlo)
+9. [Demo de audio](#demo-de-audio)
+10. [Nota legal / assets con copyright](#nota-legal)
+11. [Créditos](#creditos)
 
 ---
 
@@ -253,6 +254,23 @@ es específico de esa integración puntual):
 
 ---
 
+## Demo de audio
+
+Resultado del modelo de voz final (checkpoint `.onnx`, fine-tuning directo de
+Piper sobre voz de GLaDOS — **solo** la voz clonada sintetizada, sin audio
+original del juego):
+
+<audio controls src="demo/glados-tts-demo.wav">
+  Tu navegador no soporta la etiqueta <code>audio</code>. Descargá el archivo:
+  <a href="demo/glados-tts-demo.wav">demo/glados-tts-demo.wav</a>
+</audio>
+
+> El repositorio **no** incluye audio extraído de Portal 2 (copyright de Valve).
+> Solo se publica la voz sintetizada por el modelo entrenado, como ejemplo del
+> resultado del pipeline.
+
+---
+
 ## Estructura de carpetas
 
 ```
@@ -273,6 +291,8 @@ AI-Assistant/
 │   ├── glados_raw_es/                    # Audio extraido (NO subir a git)
 │   ├── manifest.csv                      # Pares audio|texto
 │   └── build_manifest.py
+├── demo/
+│   └── glados-tts-demo.wav               # Voz sintetizada de ejemplo (demo de audio)
 ├── rvc/                                  # Pipeline RVC (opcional, no usado en el pipeline final)
 ├── glados_agent.py                       # Agente principal (voz + tools)
 └── README.md

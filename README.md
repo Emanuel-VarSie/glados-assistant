@@ -258,7 +258,8 @@ es específico de esa integración puntual):
 
 Resultado del modelo de voz final (checkpoint `.onnx`, fine-tuning directo de
 Piper sobre voz de GLaDOS — **solo** la voz clonada sintetizada, sin audio
-original del juego):
+original del juego). Escuchá la voz decir: *"Hola, soy GLaDOS, el modelo de
+inteligencia artificial del juego de Valve conocido como Portal y Portal 2."*
 
 <audio controls src="demo/glados-tts-demo.wav">
   Tu navegador no soporta la etiqueta <code>audio</code>. Descargá el archivo:
